@@ -48,6 +48,29 @@
 
 
 
+/**
+ * Media query for easy breakpoint. Use pixel width with or without units
+ * and it will convert to em 
+ */
+@mixin mq( $point, $query1: min, $query2: width, $IE9: false, $query-unit: $browser-context) {
+    @if $IE9 == true{
+        .lt-ie9 & {
+            @content;
+        }
+        @media screen and (#{$query1}-#{$query2}: strip-unit($point) / strip-unit($query-unit) + em) {
+            @content;
+        }
+    }
+
+    @else {
+        @media screen and (#{$query1}-#{$query2}: strip-unit($point) / strip-unit($query-unit) + em) {
+            @content;
+        }
+    }
+}
+
+
+
 // Webkit-style focus
 @mixin tab-focus() {
   // Default
