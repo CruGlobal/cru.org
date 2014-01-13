@@ -8,9 +8,8 @@
  *
  */
 
-/* Brand Override Variables */ 
-//@import "ui/vars";
-
+/* UI/Brand Override Variables */ 
+@import "ui/vars";
 
 /* Core Variables and Mixins */
 @import "defaults.scss";
@@ -24,7 +23,6 @@
 
 /* Core Framework Files */
 @import "framework/main.scss";
-
 .redesign{
 	@import "framework/headings.scss";
 	//@import "framework/paragraphs.scss";
@@ -39,9 +37,9 @@
 
 
 	/* Core UI and Brand Files */
-	//@import "ui/";
-	//@import "ui/";
-	//@import "ui/";
+	@import "ui/page-head";
+	@import "ui/page-nav";
+	@import "ui/dropdowns";
 	//@import "ui/";
 	//@import "ui/";
 	//@import "ui/";

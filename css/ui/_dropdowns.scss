@@ -1,0 +1,29 @@
+/*------------------------------------*\
+    $DROPDOWNS
+\*------------------------------------*/
+
+.nav li .dropdown { 
+	position: fixed;
+	left: 0;
+	background-color: $dark-gray;
+	color: #ffffff;
+	width: 100% !important;
+	overflow: hidden;
+	max-height: 0;
+	height: 0;
+	padding-left: 30px;
+	padding-right: 30px;
+	opacity: 0;
+	/* Hover Off */
+  	@include vendor(transition, opacity 0s 0.2s ease-out );
+	@include clearfix();
+	
+	//@include vendor(transform, translate3d(0, -160%, 0));
+	//@include vendor(backface-visibility, hidden);
+	//@include vendor(perspective, 1000);
+	
+	h2, h3, h4{
+		color: #ffffff;
+		
+	}
+}

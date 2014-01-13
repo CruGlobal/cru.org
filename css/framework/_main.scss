@@ -16,8 +16,12 @@ html{
 }
 
 body{
-	background: $base-bg-color;
+	background: $base-background;
 	font-family: $base-font-family;
+}
+
+.preload {
+	display: none !important;
 }
 
 .redesign{
