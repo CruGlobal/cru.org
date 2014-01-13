@@ -2,11 +2,16 @@
     $LISTS
 \*------------------------------------*/
 ul, ol, dd {
-    @extend %typecsset-vertical-rhythm;
-    @include typecsset-space(margin-left);
+    @extend %vertical-rhythm;
+    @include spacing(margin-left);
 }
 
 li > ul,
-li > ol {
+li > ol,
+li > dt {
     margin-bottom: 0;
+}
+
+ul{
+	list-style-type: disc;
 }

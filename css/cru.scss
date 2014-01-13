@@ -24,27 +24,29 @@
 
 /* Core Framework Files */
 @import "framework/main.scss";
-@import "framework/headings.scss";
-@import "framework/paragraphs.scss";
-@import "framework/lists.scss";
-@import "framework/shared.scss";
-@import "framework/grids.scss";
-@import "framework/navs.scss";
+.redesign{
+	@import "framework/headings.scss";
+	@import "framework/paragraphs.scss";
+	@import "framework/shared.scss";
+	@import "framework/lists.scss";
+	@import "framework/grids.scss";
+	@import "framework/navs.scss";
 
 
-/* Framework Utility Files */
-@import "framework/utilities.scss";
+	/* Framework Utility Files */
+	@import "framework/utilities.scss";
 
 
-/* Core UI and Brand Files */
-//@import "ui/";
-//@import "ui/";
-//@import "ui/";
-//@import "ui/";
-//@import "ui/";
-//@import "ui/";
+	/* Core UI and Brand Files */
+	//@import "ui/";
+	//@import "ui/";
+	//@import "ui/";
+	//@import "ui/";
+	//@import "ui/";
+	//@import "ui/";
 
 
-/* UI and Brand Helper Files */
-//@import "ui/helpers.scss";
+	/* UI and Brand Helper Files */
+	//@import "ui/helpers.scss";
+}
 
