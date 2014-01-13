@@ -1,3 +1,41 @@
 /*------------------------------------*\
     $UTILITIES
 \*------------------------------------*/
+
+%center, .centered{
+	margin-left: auto;
+	margin-right: auto;
+}
+
+
+
+.center-block{
+	@extend %center;
+	
+	width: 100%;
+	text-align: center;
+}
+
+
+
+%grid-spacing{
+	padding-left: $base-spacing-unit;
+	padding-right: $base-spacing-unit;
+}
+
+
+/*
+ * Only display content to screen readers
+ *
+ * See: http://a11yproject.com/posts/how-to-hide-content/
+ */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  border: 0;
+}
