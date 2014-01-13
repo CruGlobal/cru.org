@@ -13,8 +13,10 @@
 @import "defaults.scss";
 @import "framework/mixins.scss";
 
+
 /* Reset */
 @import "framework/reset.scss";
+
 
 /* Core Framework Files */
 @import "framework/main.scss";
@@ -26,8 +28,14 @@
 @import "framework/navs.scss";
 
 
-/* Core UI and Brand Files */
-
-/* Utility and Helper Files */
+/* Framework Utility Files */
 @import "framework/utilities.scss";
+
+
+/* Core UI and Brand Files */
+//@import "ui/vars";
+
+
+/* UI and Brand Helper Files */
+//@import "ui/helpers.scss";
 
