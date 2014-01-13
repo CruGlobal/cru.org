@@ -1,0 +1,229 @@
+@charset "UTF-8";
+/*!
+ * Cru.css
+ *
+ * Designed and built with all the love in our hearts 
+ * 
+ * Thank you to Harry Roberts, Nicolas Gallagher, Johnathan Snook and others
+ * for your work with scalable CSS which has made our lives much easier 
+ *
+ */
+/* Core Variables and Mixins */
+/*------------------------------------*\
+    $DEFAULTS
+\*------------------------------------*/
+/**
+ * Default variables.
+ */
+/*------------------------------------*\
+    $BASE
+\*------------------------------------*/
+/**
+ * Base stuff
+ */
+/**
+ * Base font-family.
+ */
+/**
+ * Default colour for objects’ borders etc.
+ */
+/*------------------------------------*\
+    $TYPOGRAPHY
+\*------------------------------------*/
+/**
+ * Basic Font Sizes
+ */
+/**
+ * Headings
+ */
+/* Header sizes */
+/* Subheaders */
+/**
+ * Smalls
+ */
+/**
+ * Paragraphs
+ */
+/**
+ * Blockquotes
+ */
+/**
+ * If you are building a non-responsive site but would still like to use
+ * csswizardry-grids, set this to ‘false’:
+ */
+/**
+ * Is this build mobile first? Setting to ‘true’ means that all grids will be
+ * 100% width if you do not apply a more specific class to them.
+ */
+/**
+ * Set the spacing between your grid items.
+ */
+/**
+ * Would you like Sass’ silent classes, or regular CSS classes?
+ */
+/**
+ * Would you like push and pull classes enabled?
+ */
+/**
+ * Using `inline-block` means that the grid items need their whitespace removing
+ * in order for them to work correctly. Set the following to true if you are
+ * going to achieve this by manually removing/commenting out any whitespace in
+ * your HTML yourself.
+ *
+ * Setting this to false invokes a hack which cannot always be guaranteed,
+ * please see the following for more detail:
+ *
+ * github.com/csswizardry/csswizardry-grids/commit/744d4b23c9d2b77d605b5991e54a397df72e0688
+ * github.com/csswizardry/inuit.css/issues/170#issuecomment-14859371
+ */
+/**
+ * Define your breakpoints. The first value is the prefix that shall be used for
+ * your classes (e.g. `.palm--one-half`), the second value is the media query
+ * that the breakpoint fires at.
+ */
+/**
+ * Define which namespaced breakpoints you would like to generate for each of
+ * widths, push and pull. This is handy if you only need pull on, say, desk, or
+ * you only need a new width breakpoint at mobile sizes. It allows you to only
+ * compile as much CSS as you need. All are turned on by default, but you can
+ * add and remove breakpoints at will.
+ *
+ * Push and pull shall only be used if `$push` and/or `$pull` and `$responsive`
+ * have been set to ‘true’.
+ */
+/*------------------------------------*\
+    $FRAMEWORK
+\*------------------------------------*/
+/**
+ * Skeleton will work these next ones out for use within the framework.
+ *
+ * Assign our `$base-line-height` to a new spacing var for more transparency.
+ */
+/*------------------------------------*\
+    $MIXINS
+\*------------------------------------*/
+/* Reset */
+.redesign {
+  /**
+   * The usual...
+   */
+  /**
+   * Give a help cursor to elements that give extra info on `:hover`.
+   */
+  /**
+   * Remove underlines from potentially troublesome elements.
+   */
+  /**
+   * Apply faux underline via `border-bottom`.
+   */
+  /**
+   * So that `alt` text is visually offset if images don’t load.
+   */
+  /**
+   * Give form elements some cursor interactions...
+   */
+  /* Helpful Typography Defaults */
+}
+.redesign h1, .redesign h2, .redesign h3, .redesign h4, .redesign h5, .redesign h6,
+.redesign p, .redesign blockquote, .redesign pre,
+.redesign dl, .redesign dd, .redesign ol, .redesign ul,
+.redesign form, .redesign fieldset, .redesign legend,
+.redesign table, .redesign th, .redesign td, .redesign caption,
+.redesign hr {
+  margin: 0;
+  padding: 0;
+}
+.redesign abbr[title], .redesign dfn[title] {
+  cursor: help;
+}
+.redesign u, .redesign ins {
+  text-decoration: none;
+}
+.redesign ins {
+  border-bottom: 1px solid;
+}
+.redesign img {
+  font-style: italic;
+}
+.redesign label,
+.redesign input,
+.redesign textarea,
+.redesign button,
+.redesign select,
+.redesign option {
+  cursor: pointer;
+}
+.redesign .text-input:active,
+.redesign .text-input:focus,
+.redesign textarea:active,
+.redesign textarea:focus {
+  cursor: text;
+  outline: none;
+}
+.redesign input,
+.redesign button,
+.redesign select,
+.redesign textarea {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+.redesign a {
+  color: #007cb1;
+  text-decoration: none;
+}
+.redesign a:hover, .redesign a:focus {
+  color: #006a98;
+  text-decoration: underline;
+}
+.redesign img {
+  vertical-align: middle;
+  max-width: 100%;
+  /* Set images to the full width of parent */
+}
+.redesign hr {
+  border: 0;
+  border-top: 1px solid #cccccc;
+}
+.redesign em,
+.redesign i {
+  font-style: italic;
+  line-height: inherit;
+}
+.redesign strong,
+.redesign b {
+  font-weight: bold;
+  line-height: inherit;
+}
+.redesign small {
+  font-size: 80%;
+  line-height: inherit;
+}
+
+/* Core Framework Files */
+/*------------------------------------*\
+    $MAIN
+\*------------------------------------*/
+/*------------------------------------*\
+    $HEADINGS
+\*------------------------------------*/
+/*------------------------------------*\
+    $PARAGRAPHS
+\*------------------------------------*/
+/*------------------------------------*\
+    $LISTS
+\*------------------------------------*/
+/*------------------------------------*\
+    $SHARED
+\*------------------------------------*/
+/*------------------------------------*\
+    $GRIDS
+\*------------------------------------*/
+/*------------------------------------*\
+    $NAVS
+\*------------------------------------*/
+/* Core UI and Brand Files */
+/* Utility and Helper Files */
+/*------------------------------------*\
+    $UTILITIES
+\*------------------------------------*/
