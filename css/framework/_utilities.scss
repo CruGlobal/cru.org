@@ -20,7 +20,11 @@
 
 %grid-spacing{
 	padding-left: $base-spacing-unit;
+	padding-left: $line-height-ratio + rem;
+	
 	padding-right: $base-spacing-unit;
+	padding-right: $line-height-ratio + rem;
+	
 }
 
 
