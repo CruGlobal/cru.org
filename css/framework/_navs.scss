@@ -1,3 +1,22 @@
 /*------------------------------------*\
     $NAVS
 \*------------------------------------*/
+
+.nav{
+	list-style-type: none;
+	margin-left: 0;
+	
+	& > li, & > li > a{
+		display: inline-block;
+		zoom: 1;
+	}
+	
+	& > li{
+		padding: 0 5px;
+	}
+
+	.grid__item{
+		@extend %plr4;
+	}
+	
+}

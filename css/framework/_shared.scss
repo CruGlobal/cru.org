@@ -1,3 +1,43 @@
 /*------------------------------------*\
     $SHARED
 \*------------------------------------*/
+
+%typecsset-reset{
+	margin: 0;
+	padding: 0;
+}
+
+%vertical-rhythm {
+    @extend %typecsset-reset;
+	
+    margin-bottom: $base-spacing-unit;
+    margin-bottom: $line-height-ratio + rem;
+}
+
+
+/**
+ * Base elements
+ */
+hgroup,
+ul,ol,dl,p,address,
+table,
+fieldset,figure,
+pre, hr,
+/**
+ * Objects and abstractions
+ */
+%sass-margin-bottom,
+.media,
+.island,
+.islet{
+	@extend %vertical-rhythm;
+}
+
+/**
+ * `hr` elements only take up a few pixels, so we need to give them special
+ * treatment regarding vertical rhythm.
+ */
+hr{	
+    margin-top: $base-spacing-unit;
+    margin-top: $line-height-ratio + rem;
+}
