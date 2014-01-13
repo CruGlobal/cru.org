@@ -6,6 +6,9 @@
 	height: inherit;
 	background: #ffffff;
 	width: 100%;
+	
+	@include vendor(box-shadow, 0 1px 1px rgba(6,8,8,0.1));
+	
 }
 
 
@@ -46,11 +49,13 @@
 	
 	.site-logo {
 		width: 70px;
-		height: 55px;			
-		background-image: url("../images/cru-logo.svg");
+		height: 55px;	
+		margin: 0;
+		
+		background: $cru-logo-fallback;	
+			
+		background-image: $cru-logo-primary;
 		background-repeat: no-repeat;
 		background-position: top center;
-		//background-size: contain;
-		margin: 0;
 	}
 	

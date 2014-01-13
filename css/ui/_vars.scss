@@ -1,6 +1,7 @@
 /*------------------------------------*\
     $VARIABLES
 \*------------------------------------*/
+@import "fonts";
 
 
 /*------------------------------------*\
@@ -39,3 +40,10 @@ $cur-bright-blue:  #3eb1c8;
  * Grayscale
  */ 
 $dark-gray:         #4c4749;
+
+/*------------------------------------*\
+    $Color Palette
+\*------------------------------------*/
+$cru-logo-primary:  url("images/cru-logo.svg");
+$cru-logo-fallback: url("images/cru-logo.png");
+

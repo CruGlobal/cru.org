@@ -10,7 +10,6 @@
 	height: 64px;
 	max-height: 100%;
 	
-	@include vendor(box-shadow, 0 1px 1px rgba(6,8,8,0.1));
 }
 
 	.fixed-width{
@@ -27,8 +26,11 @@
 		display: inline-block;
 		vertical-align: middle;
 	}
-		
-	%nav_items{
+	/**
+	 * Since all the things in the main navbar will have very similar stylings
+	 * its much easier to make a silent class to extend when needed
+	 */	
+	.nav-link{
 		
 		display: inline-block;
 		padding: 0 18px;
@@ -51,17 +53,21 @@
 			text-decoration: none;
 		}
 	}
-		
-		.site-nav > li > a, .topbar-search{
-			@extend %nav_items;
-		}
 	
-		.right-nav > li > a{
-			font-weight: 400;
+		.site-nav{
+			float: none;
+			margin-bottom: 0;
+			width: 66%;
+			display: inline-block;
+			vertical-align: middle;
+		
+			> li{
+				
+				position: relative;
 			
-			@extend %nav_items;
+			}
 		}
-
+		
 		.right-nav{
 			float: right;
 			text-align: right;
@@ -74,31 +80,28 @@
 				display: inline-block;
 				padding: 0;
 				position: relative;
+				
+				.nav-link{				
+					display: inline-block;
+				
+					font-weight: 400; 
+				
+					@include font-size(14px, false);
+				}
+				
 			}
 		
 			h3{
 				text-align: left;
 			}
+		
 		}
 	
-			.right-nav > li > a{
-				display: inline-block;
-				font-size: 12px;
-				font-size: 1.2rem;
-			}
-
-		.site-nav{
-			float: none;
-			margin-bottom: 0;
-			width: 66%;
-			display: inline-block;
-			vertical-align: middle;
-		}
-	
-		.topbar-toggle{
+		.topbar-toggle{				
 			display: none;
-			
-			@extend %nav_items;
+		}
+		
+		.topbar-search{
 		}
 		
 		

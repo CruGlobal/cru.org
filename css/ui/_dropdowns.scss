@@ -2,7 +2,39 @@
     $DROPDOWNS
 \*------------------------------------*/
 
-.nav li .dropdown { 
+
+.nav li:hover{
+	& > .arrow-up{
+		 display: block;
+	}
+	
+	& > .dropdown{
+    	padding-top: 30px;
+    	padding-bottom: 30px;
+    	max-height: 270px;
+    	height: 270px;
+    	overflow: visible;
+  		opacity: 1;
+  
+    	-webkit-box-shadow: 0 1px 1px rgba(6, 8, 8, 0.1);
+    	-moz-box-shadow: 0 1px 1px rgba(6, 8, 8, 0.1);
+    	-ms-box-shadow: 0 1px 1px rgba(6, 8, 8, 0.1);
+    	-o-box-shadow: 0 1px 1px rgba(6, 8, 8, 0.1);
+    	box-shadow: 0 1px 1px rgba(6, 8, 8, 0.1);
+    	/* Hover On */
+    	/*-webkit-transition: max-height 0.25s ease;*/
+  
+    	@include vendor(transition, all 0.3s 0.2s ease );
+	
+  	.small-wrap{
+  		opacity: 1;
+  	  	@include vendor(transition, all 0.3s 0.3s ease );
+  	}
+	}
+}
+
+
+.dropdown { 
 	position: fixed;
 	left: 0;
 	background-color: $dark-gray;
@@ -27,3 +59,40 @@
 		
 	}
 }
+
+.no-csstransitions .nav li .dropdown{
+	height: 0;
+}
+
+.nav li:hover > .arrow-up {
+  display: block; }
+
+
+  .dropdown .small-wrap{
+	  opacity: 0;
+  } 
+  
+  
+  .nav li:hover > .dropdown {
+    	padding-top: 30px;
+    	padding-bottom: 30px;
+    	max-height: 270px;
+    	height: 270px;
+    	overflow: visible;
+  	opacity: 1;
+  
+    	-webkit-box-shadow: 0 1px 1px rgba(6, 8, 8, 0.1);
+    	-moz-box-shadow: 0 1px 1px rgba(6, 8, 8, 0.1);
+    	-ms-box-shadow: 0 1px 1px rgba(6, 8, 8, 0.1);
+    	-o-box-shadow: 0 1px 1px rgba(6, 8, 8, 0.1);
+    	box-shadow: 0 1px 1px rgba(6, 8, 8, 0.1);
+    	/* Hover On */
+    	/*-webkit-transition: max-height 0.25s ease;*/
+  
+    	@include vendor(transition, all 0.3s 0.2s ease );
+	
+  	.small-wrap{
+  		opacity: 1;
+  	  	@include vendor(transition, all 0.3s 0.3s ease );
+  	}
+  }
