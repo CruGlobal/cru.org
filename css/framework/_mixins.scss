@@ -41,6 +41,11 @@
 	
 }
 
+@mixin spacing($property) {
+    #{$property}: 2 * $base-spacing-unit;
+    #{$property}: 2 * $line-height-ratio + rem;
+}
+
 
 
 // Webkit-style focus

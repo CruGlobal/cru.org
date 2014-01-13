@@ -9,6 +9,7 @@
 
 %vertical-rhythm {
     @extend %typecsset-reset;
+	
     margin-bottom: $base-spacing-unit;
     margin-bottom: $line-height-ratio + rem;
 }
