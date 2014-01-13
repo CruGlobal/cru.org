@@ -1,3 +1,14 @@
 /*------------------------------------*\
     $SHARED
 \*------------------------------------*/
+
+%typecsset-reset{
+	margin: 0;
+	padding: 0;
+}
+
+%vertical-rhythm {
+    @extend %typecsset-reset;
+    margin-bottom: $base-spacing-unit;
+    margin-bottom: $line-height-ratio + rem;
+}

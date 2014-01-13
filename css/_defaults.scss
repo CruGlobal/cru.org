@@ -82,13 +82,12 @@ $header-line-height:           1.4 !default;
 $header-text-rendering:        optimizeLegibility !default;
 	 
 	/* Header sizes */
-	$h1-font-size: 44px !default; // 44px: 4.4rem
+	$h1-font-size: 48px !default; // 44px: 4.4rem
 	$h2-font-size: 36px !default; // 36px: 3.6rem
-	$h3-font-size: 26px !default; // 26px: 2.6rem
-	$h4-font-size: 22px !default; // 22px: 2.2rem
+	$h3-font-size: 30px !default; // 26px: 2.6rem
+	$h4-font-size: 24px !default; // 22px: 2.2rem
 	$h5-font-size: 20px !default; // 20px: 1.0rem
-	$h6-font-size: $base-font-size !default;
-
+	$h6-font-size: 18px !default;
 
 	/* Subheaders */
 	$subheader-line-height:   1.4 !default;
@@ -204,7 +203,7 @@ $breakpoint-has-pull:   ('palm', 'lap', 'portable', 'desk')!default;
  *
  * Assign our `$base-line-height` to a new spacing var for more transparency.
  */
-$base-spacing-unit:         $base-line-height!default;
-$half-spacing-unit:         $base-spacing-unit / 2!default;
+$base-spacing-unit:         $base-line-height !default;
+$half-spacing-unit:         $base-spacing-unit / 2 !default;
 $line-height-ratio:         $base-line-height / $base-font-size;
 
