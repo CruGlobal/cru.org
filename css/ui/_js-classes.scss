@@ -1,0 +1,10 @@
+.search-is-open .search-wrap{
+	@include vendor(transition-duration, 0.25s);
+	@include vendor(transform, translate3d(0, 0, 0));
+}
+
+
+.search-is-open .site-header, .search-is-open .main-content{
+	@include vendor(transition-duration, 0.25s);
+	@include vendor(transform, translate3d(0, 82px, 0));
+}

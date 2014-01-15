@@ -25,6 +25,8 @@
 	border-top: 3px;
 	border-top-style: solid;
 	border-top-color: $cru-gold;
+	
+	@include vendor(transition-duration, 0.25s);
 }
 
 	.title-group{

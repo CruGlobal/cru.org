@@ -41,9 +41,24 @@ $cur-bright-blue:  #3eb1c8;
  */ 
 $dark-gray:         #4c4749;
 
+
+
+
+
 /*------------------------------------*\
-    $Color Palette
+    $BUTTON SETTINGS
+\*------------------------------------*/
+$gold-btn-color: $white;
+$gold-btn-bg: $cru-gold;
+$gold-btn-border: $cru-gold;
+
+
+
+
+/*------------------------------------*\
+    $URL PATHS
 \*------------------------------------*/
 $cru-logo-primary:  url("images/cru-logo.svg");
 $cru-logo-fallback: url("images/cru-logo.png");
+
 

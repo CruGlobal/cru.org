@@ -1,0 +1,21 @@
+/*------------------------------------*\
+    $BUTTONS
+\*------------------------------------*/
+
+
+// Gold buttons
+.button--primary {
+  @include button-variant($gold-btn-color, $gold-btn-bg, $gold-btn-border);
+}
+
+
+.js-close-search{
+	position: absolute;
+	top: 0px;
+	right: 0;
+	
+	padding: 10px 18px;
+	
+	font-size: 16px;
+	
+}

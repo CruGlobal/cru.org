@@ -20,14 +20,25 @@
 	<img src="assets/images/cru-logo.svg" alt="" width="0" height="0">
 </div>
 	<div class="redesign">
-		<form method="post" onsubmit="javascript:setPubWebSearch(this.site);" action="#" name="search" class="search">
-		    <input id="search-box" name="ssUserText" placeholder="Search" type="text">
-		    <input id="Query" value="#" name="Query" type="hidden"> 
-		    <input id="search-image" value="" type="submit">
-		        <div id="trigger_options" onclick="return toggle_div('search_options','triangle');">
-		            <div id="triangle"></div>
-		        </div>
-		</form>
+		
+		<section class="search-wrap">
+			<form name="search" class="site-search  fixed-width">
+				<fieldset>
+					<ul class="form-fields">
+						<li>
+							<input id="search-box" name="ssUserText" type="text"  class="form-input">
+							<input id="Query" value="#" name="Query" type="hidden"> 
+							<input id="search-image" value="Search" type="submit"  class="button  button--small  button--primary">
+						</li>
+					</ul>				
+				        <div id="trigger_options" >
+				            <div id="triangle"></div>
+				        </div>
+					<button class="icon--close  js-close-search"> Close X</button>
+				</fieldset>
+			</form>
+		</section>
+		
 		<header id="header" class="site-header  header--fixed"  role="banner">
 			
 			<div class="bg-white">
@@ -238,11 +249,27 @@
 		</header>
 		<div class="main-content">
 			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 		</div>
 	</div>
 		
 		
 		
 		<script type="text/javascript" src="assets/scripts/main.min.js"></script>
+		<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+		<script type="text/javascript">
+			$(".topbar-search").click(function(){
+				$('html').toggleClass("search-is-open");
+				$('#search-box').focus();
+			});
+			$(".js-close-search").click(function(){
+				$('html').removeClass("search-is-open");
+			});
+			$(".main-content").click(function(){
+				$('html').removeClass("search-is-open");
+			});
+			
+		</script>
+	
 </body>
 </html>
