@@ -12,6 +12,7 @@
  <!--[if lt IE 9]>
    <link href="assets/styles/ie.css" media="screen, projection" rel="stylesheet" type="text/css" />
 <![endif]--> 
+	 <link rel="stylesheet" href="http://use.typekit.net/c/2c5d65/freight-sans-pro:i3:i4:n3:n4:n5:n6:n7,leitura-news:n6.TJ9:N:1,TJC:N:1,TJ8:N:1,TJB:N:1,TJD:N:1,TJG:N:1,TJJ:N:1,Vxv:N:2/d?3bb2a6e53c9684ffdc9a9bfe1e5b2a624a18a35d1cc6ab0427f2c676ea479ea4941b9d85bfdb9f54dbc3102058ce84b71b00f97054ed7b57f04d7c796d62bb0a99033d182b86d8a559bbd735c795db8fcca9f5eebceadaa5d1e68b4c92f95a4c72bc42ce31d4628bcc47c902f4b8b6d8c8ca7f2293127258922c55b3f2b1ad51606dc824d8410e5c1f32b5a754e02ac1a48e4de93976104c6b177892bd16a9d250acca08cb31a5b280589d455826a3d262401ff79123c221">
 </head>
 <body>
 <!-- Hidden preload div to load images before they are needed by CSS -->
@@ -19,7 +20,16 @@
 	<img src="assets/images/cru-logo.svg" alt="" width="0" height="0">
 </div>
 	<div class="redesign">
+		<form method="post" onsubmit="javascript:setPubWebSearch(this.site);" action="#" name="search" class="search">
+		    <input id="search-box" name="ssUserText" placeholder="Search" type="text">
+		    <input id="Query" value="#" name="Query" type="hidden"> 
+		    <input id="search-image" value="" type="submit">
+		        <div id="trigger_options" onclick="return toggle_div('search_options','triangle');">
+		            <div id="triangle"></div>
+		        </div>
+		</form>
 		<header id="header" class="site-header  header--fixed"  role="banner">
+			
 			<div class="bg-white">
 				<div class="navigation-wrapper  fixed-width"><!--
 				 --><hgroup class="title-group">

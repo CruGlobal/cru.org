@@ -79,7 +79,7 @@
     	max-height: 270px;
     	height: 270px;
     	overflow: visible;
-  	opacity: 1;
+  		opacity: 1;
   
     	-webkit-box-shadow: 0 1px 1px rgba(6, 8, 8, 0.1);
     	-moz-box-shadow: 0 1px 1px rgba(6, 8, 8, 0.1);
@@ -96,3 +96,20 @@
   	  	@include vendor(transition, all 0.3s 0.3s ease );
   	}
   }
+  
+  
+  .dropdown-wrap{
+	  height: auto;
+	  overflow: visible;
+	  background-color: #ededed;
+	  @extend .cf;
+	  
+  }
+  .dropdowns{
+	  background-color: #ededed;
+	  overflow: hidden;
+  }
+  
+  	.dropdown__item{
+  		display: none;
+  	}
