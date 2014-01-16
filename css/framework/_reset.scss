@@ -1,16 +1,3 @@
-.redesign{
-	/**
-	 * The usual...
-	 */
-	h1,h2,h3,h4,h5,h6,
-	p,blockquote,pre,
-	dl,dd,ol,ul,
-	form,fieldset,legend,
-	table,th,td,caption,
-	hr{
-	    margin:0;
-	    padding:0;
-	}
 
 	/**
 	 * Give a help cursor to elements that give extra info on `:hover`.
@@ -75,18 +62,7 @@
 	// Links
 
 	a {
-	  color: $base-link-color;
 	  text-decoration: none;
-
-	  &:hover,
-	  &:focus {
-	    color: darken($base-link-color, 5%);
-	    text-decoration: underline;
-	  }
-
-	  &:focus {
-	    //@include tab-focus;
-	  }
 	}
 
 
@@ -123,5 +99,3 @@
 	  line-height: inherit;
 	}
 
-	
-}

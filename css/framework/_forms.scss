@@ -1,0 +1,227 @@
+/*------------------------------------*\
+    $FORMS
+\*------------------------------------*/
+/**
+ *
+ * Demo: jsfiddle.net/inuitcss/MhHHU
+ *
+ */
+fieldset{
+    padding: $base-spacing-unit;
+	border: 0;
+}
+
+fieldset:last-child{
+	margin-bottom: 0;
+}
+
+fieldset + fieldset{
+	padding-top: 0;
+}
+
+legend {
+  display: block;
+  width: 100%;
+  padding: 0;
+  font-size: ($base-font-size * 1.5);
+  line-height: inherit;
+  border: 0;
+}
+
+
+/**
+ * Text inputs
+ *
+ * Instead of a `[type]` selector for each kind of form input, we just use a
+ * class to target any/every one, e.g.:
+   <input type=text class=text-input>
+   <input type=email class=text-input>
+   <input type=password class=text-input>
+ *
+ */
+
+.form-input, textarea{
+	&:hover{
+		//border-color: darken($base-ui-color, 25%);
+	}
+}
+
+.form-input, .form-control, textarea{
+  display: block;
+  width: 100%;
+  height: $base-line-height + ($base-spacing-unit / 2) - 2px ; // Make inputs at least the height of their button counterpart (base line-height + padding + border)
+  
+  padding-top: $base-spacing-unit / 6;
+  padding-bottom: $base-spacing-unit / 6;
+  padding-left: $base-spacing-unit / 2;
+  padding-right: $base-spacing-unit / 2;
+  
+  font-size: $base-font-size * 0.875;
+  line-height: $base-line-height;
+  vertical-align: middle;
+  
+  background-image: none; // Reset unusual Firefox-on-Android default style; see https://github.com/necolas/normalize.css/issues/214
+  border: 2px solid $base-ui-color;
+
+  // Customize the `:focus` state to imitate native WebKit styles.
+  //@include form-control-focus;
+
+  // Disabled and read-only inputs
+  // Note: HTML5 says that controls under a fieldset > legend:first-child won't
+  // be disabled if the fieldset is disabled. Due to implementation difficulty,
+  // we don't honor that edge case; we style them as disabled anyway.
+  &[disabled],
+  &[readonly],
+  fieldset[disabled] & {
+    cursor: not-allowed;
+    //background-color: $input-bg-disabled;
+  }
+}
+
+
+/**
+ * Group sets of form fields in a list, e.g.:
+ *
+   <ul class=form-fields>
+       <li>
+           <label />
+           <input />
+       </li>
+       <li>
+           <label />
+           <select />
+       </li>
+       <li>
+           <label />
+           <input />
+       </li>
+   </ul>
+ *
+ */
+.form-fields{
+    list-style:none;
+    margin:0;
+}
+    .form-fields > li{
+        @extend %sass-margin-bottom;
+    }
+    .form-fields > li:last-child{
+        margin-bottom:0;
+    }
+
+
+/**
+ * Labels
+ *
+ * Define a `.label` class as well as a `label` element. This means we can apply
+ * label-like styling to meta-labels for groups of options where a `label`
+ * element is not suitable, e.g.:
+ *
+   <li>
+       <span class=label>Select an option below:</span>
+       <ul class="multi-list  four-cols">
+           <li>
+               <input /> <label />
+           </li>
+           <li>
+               <input /> <label />
+           </li>
+           <li>
+               <input /> <label />
+           </li>
+           <li>
+               <input /> <label />
+           </li>
+       </ul>
+   </li>
+ *
+ */
+label,
+.label{
+    display:block;
+	margin-bottom: $base-spacing-unit / 4;
+}
+    /**
+     * Extra help text in `label`s, e.g.:
+     *
+       <label>Card number <small class=additional>No spaces</small></label>
+     *
+     */
+    .additional{
+        display:block;
+        font-weight:normal;
+    }
+
+
+/*
+ * Groups of checkboxes and radios, e.g.:
+ *
+   <li>
+       <ul class=check-list>
+           <li>
+               <input /> <label />
+           </li>
+           <li>
+               <input /> <label />
+           </li>
+       </ul>
+   </li>
+ *
+ */
+.check-list{
+    list-style:none;
+    margin:0;
+}
+    /*
+     * Labels in check-lists
+     */
+    .check-label,
+    .check-list label,
+    .check-list .label{
+        display:inline-block;
+    }
+
+
+/**
+ * Spoken forms are for forms that read like spoken word, e.g.:
+ *
+   <li class=spoken-form>
+       Hello, my <label for=spoken-name>name</label> is
+       <input type=text class=text-input id=spoken-name>. My home
+       <label for=country>country</label> is
+       <select id=country>
+           <option>UK</option>
+           <option>US</option>
+           <option>Other</option>
+       </select>
+   </li>
+ *
+ */
+.spoken-form label{
+    display:inline-block;
+    font:inherit;
+}
+
+
+/**
+ * Extra help text displayed after a field when that field is in focus, e.g.:
+ *
+   <label for=email>Email:</label>
+   <input type=email class=text-input id=email>
+   <small class=extra-help>.edu emails only</small>
+ *
+ * We leave the help text in the document flow and merely set it to
+ * `visibility:hidden;`. This means that it won’t interfere with anything once
+ * it reappears.
+ *
+ */
+/*small*/.form-help{
+    display:inline-block;
+    visibility:hidden;
+	height: 0;
+}
+.form-input:active + .form-help,
+.form-input:focus + .form-help{
+    visibility:visible;
+	height: auto;
+}

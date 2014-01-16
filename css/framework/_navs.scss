@@ -10,10 +10,6 @@
 		display: inline-block;
 		zoom: 1;
 	}
-	
-	& > li{
-		padding: 0 5px;
-	}
 
 	.grid__item{
 		@extend %grid-spacing;

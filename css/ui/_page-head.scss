@@ -25,6 +25,8 @@
 	border-top: 3px;
 	border-top-style: solid;
 	border-top-color: $cru-gold;
+	
+	@include vendor(transition-duration, 0.25s);
 }
 
 	.title-group{
@@ -48,7 +50,7 @@
 			background: none transparent scroll repeat 0 0;
 			@extend .cf;
 		
-		}
+		} 
 	}
 	
 	.site-logo {
@@ -56,11 +58,10 @@
 		height: 55px;	
 		margin: 0;
 		
-		background: $cru-logo-fallback;	
-			
 		background-image: $cru-logo-primary;
 		background-repeat: no-repeat;
 		background-position: top center;
 	}
+	
 
 	
