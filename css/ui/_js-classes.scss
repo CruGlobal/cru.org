@@ -49,6 +49,8 @@
 		position: absolute;
 		top: 0px;
 		background-color: $cru-gold;
+		
+		@include vendor(transition, height 250ms 0.2s ease);
 	}
 
 	& > .dropdown-wrap{
