@@ -9,10 +9,11 @@
 <title>Cru.org</title>
 
 <link rel="stylesheet" href="cru.min.css">
+<script type="text/javascript" src="modernizr.js"></script>
  <!--[if lt IE 9]>
    <link href="assets/styles/ie.css" media="screen, projection" rel="stylesheet" type="text/css" />
 <![endif]--> 
-	 <link rel="stylesheet" href="http://use.typekit.net/c/2c5d65/freight-sans-pro:i3:i4:n3:n4:n5:n6:n7,leitura-news:n6.TJ9:N:1,TJC:N:1,TJ8:N:1,TJB:N:1,TJD:N:1,TJG:N:1,TJJ:N:1,Vxv:N:2/d?3bb2a6e53c9684ffdc9a9bfe1e5b2a624a18a35d1cc6ab0427f2c676ea479ea4941b9d85bfdb9f54dbc3102058ce84b71b00f97054ed7b57f04d7c796d62bb0a99033d182b86d8a559bbd735c795db8fcca9f5eebceadaa5d1e68b4c92f95a4c72bc42ce31d4628bcc47c902f4b8b6d8c8ca7f2293127258922c55b3f2b1ad51606dc824d8410e5c1f32b5a754e02ac1a48e4de93976104c6b177892bd16a9d250acca08cb31a5b280589d455826a3d262401ff79123c221">
+	 <link rel="stylesheet"  href="http://use.typekit.net/c/2c5d65/freight-sans-pro:i3:i4:n3:n4:n5:n6:n7,leitura-news:n6.TJ9:N:1,TJC:N:1,TJ8:N:1,TJB:N:1,TJD:N:1,TJG:N:1,TJJ:N:1,Vxv:N:2/d?3bb2a6e53c9684ffdc9a9bfe1e5b2a624a18a35d1cc6ab0427f2c676ea479ea4941b9d85bfdb9f54dbc3102058ce84b71b00f97054ed7b57f04d7c796d62bb0a99033d182b86d8a559bbd735c795db8fcca9f5eebceadaa5d1e68b4c92f95a4c72bc42ce31d4628bcc47c902f4b8b6d8c8ca7f2293127258922c55b3f2b1ad51606dc824d8410e5c1f32b5a754e02ac1a48e4de93976104c6b177892bd16a9d250acca08cb31a5b280589d455826a3d262401ff79123c221">
 </head>
 <body>
 <!-- Hidden preload div to load images before they are needed by CSS -->
@@ -22,21 +23,23 @@
 	<div class="redesign">
 		
 		<section class="search-wrap">
-			<form name="search" class="site-search  fixed-width">
-				<fieldset>
-					<ul class="form-fields">
-						<li>
-							<input id="search-box" name="ssUserText" type="text"  class="form-input">
-							<input id="Query" value="#" name="Query" type="hidden"> 
-							<input id="search-image" value="Search" type="submit"  class="button  button--small  button--primary">
-						</li>
-					</ul>				
-				        <div id="trigger_options" >
-				            <div id="triangle"></div>
-				        </div>
-					<button class="icon--close  js-close-search"> Close X</button>
-				</fieldset>
-			</form>
+			<div class="fixed-width  position--relative">
+				<button class="icon--close  js-close-search"> Close X</button>
+				<form name="search" action="#" class="site-search">
+					<fieldset>
+						<ul class="form-fields">
+							<li>
+								<input id="search-box" type="text"  class="form-input">
+								<input id="Query" value="#" name="Query" type="hidden"> 
+								<input id="search-image" value="Search" type="submit"  class="button  button--small  button--primary">
+							</li>
+						</ul>				
+					        <div id="trigger_options" >
+					            <div id="triangle"></div>
+					        </div>
+					</fieldset>
+				</form>
+			</div>
 		</section>
 		
 		<header id="header" class="site-header  header--fixed"  role="banner">
@@ -52,97 +55,31 @@
 							</h1>
 						</a>
 					</hgroup><!--
-				 --><nav class="navigation  js-dropdown"  role="navigation">
+				 --><nav class="navigation  js-navigation"  role="navigation">
 						<ul class="nav  right-nav ">
-							<li class="user-actions  dropdown__item">
+							<li class="user-actions">
 								<a href="#" class="nav-link">About</a>
-							    <div class="arrow-up"></div>
-							    <div class="dropdown  dropdown__item">
-								
-									<div class="small-wrap">
-								   	    <h3>About</h3>
-								  	    <ul class="nav  grid">
-										    <li class="grid__item  one-third  dropdown--column">
-											  <a href="#">Donor Relations</a>
-											  <a href="#">Our Leadership</a>	
-											  
-										  												  
-										    </li>
-										    <li class="grid__item  one-third  dropdown--column">
-										   	  <a href="#">What We Do</a>
-											  <a href="#">Contact Us</a>											   
-										    </li>
-										    <li class="grid__item  one-third  dropdown--column">
-										  	  <a href="#">Statement of Faith</a>
-										  	  <a href="#">Press</a>											  
-										    </li>
-									    </ul>
-									</div>
-								
-							    </div><!---->
 							</li>
 						
 							<li class="user-actions">
 								<a href="#"  class="nav-link">Store</a>
-							   <!-- <div class="arrow-up"></div>
-							    <div class="dropdown  dropdown__item">
-								
-									<div class="small-wrap">
-								   	    <h3>Start with God</h3>
-								  	    <ul class="nav  grid">
-										    <li class="grid__item  one-third  dropdown--column">
-											  <a href="#">Know God Personally</a>
-											  <a href="#">Jesus and the Intellectual</a>													  
-										    </li>
-										    <li class="grid__item  one-third  dropdown--column">
-										   	  <a href="#">Who is Jesus?</a>
-											  <a href="#">My Story</a>												
-										    </li>
-										    <li class="grid__item  one-third  dropdown--column">
-										  	  <a href="#">Did Jesus Rise from the Dead?</a>
-										    </li>
-									    </ul>
-									</div>
-								
-							    </div>-->
 							</li>
 						
-							<li class="user-actions  dropdown__item  js-dropdown">
-								<a href="#"  class="nav-link">Give</a>
-							    <div class="arrow-up"></div>
-							    <div class="dropdown  dropdown__item">
-								
-									<div class="small-wrap">
-								   	    <h3>Give</h3>
-								  	    <ul class="nav  grid">
-										    <li class="grid__item  one-third  dropdown--column">
-											  <a href="#">Gift Cart & Checkout</a>
-											  <a href="#">Donor Relations</a>													  
-										    </li>
-										    <li class="grid__item  one-third  dropdown--column">
-										   	  <a href="#">Your Account</a>
-											  <a href="#">FAQ</a>												
-										    </li>
-										    <li class="grid__item  one-third  dropdown--column">
-										  	  <a href="#">Other Ways to Give</a>
-										    </li>
-									    </ul>
-									</div>
-								
-							    </div><!---->
+							<li class="user-actions">
+								<a href="#"  class="nav-link">Give</a>								
 							</li>
 						
-							<a href="#"  class=" nav-link  icon-search  topbar-search"></a>						
+							<a href="#site-search"  class="nav-link  icon-search  topbar-search"></a>						
 							<a href="#flyout"  id="nav-open-btn"  class=" nav-link icon-hamburger  topbar-toggle  js-topbar-toggle"></a>
 						</ul>
 					
 						<ul class="nav  site-nav">
 						
-							<li id="test" class="dropdown__item">
+							<li class="has-dropdown  js-dropdown">
 							    <a href="#"  class="nav-link">Start with God</a>	
-							    <div class="dropdown  dropdown__item">
+							    <div class="dropdown-wrap">
 								
-									<div class="small-wrap">
+									<div class="dropdown  fixed-width">
 								   	    <h3>Start with God</h3>
 								  	    <ul class="nav  grid">
 										    <li class="grid__item  one-third  dropdown--column">
@@ -162,12 +99,12 @@
 							    </div><!---->
 							</li>
 						
-							<li class="dropdown__item  js-dropdown">
+							<li class="has-dropdown  js-dropdown">
 							  <a href="#"  class="nav-link">Train & Grow</a>	
 							  <div class="arrow-up"></div>
-							  <div class="dropdown  dropdown__item">
+							  <div class="dropdown-wrap">
 							  
-							      <div class="small-wrap">
+							      <div class="dropdown  fixed-width">
 	  							  	<h3>Train & Grow</h3>
 							  	    <ul class="nav  grid">
 									    <li class="grid__item  one-third  dropdown--column">
@@ -189,12 +126,12 @@
 							  </div>
 							</li>
 						
-							<li class="dropdown__item  js-dropdown">
+							<li class="has-dropdown  js-dropdown">
 							  <a href="#"  class="nav-link">Communities</a>
 							  <div class="arrow-up"></div>							  
-							  <div class="dropdown  dropdown__item">
+							  <div class="dropdown-wrap">
 							  
-							      <div class="small-wrap">
+							      <div class="dropdown  fixed-width">
 	  							  	<h3>Communities</h3>
 							  	    <ul class="nav  grid">
 									    <li class="grid__item  one-third  dropdown--column">
@@ -216,12 +153,12 @@
 							  </div>
 							</li>
 						
-							<li class="dropdown__item  js-dropdown">
+							<li class="has-dropdown  js-dropdown">
 							  <a href="#"  class="nav-link">Opportunities</a>	
 							  <div class="arrow-up"></div>							  
-							  <div class="dropdown  dropdown__item">
+							  <div class="dropdown-wrap">
 							  
-							      <div class="small-wrap">
+							      <div class="dropdown  fixed-width">
 	  							  	<h3>Train and Super Time Growth</h3>
 							  	    <ul class="nav  grid">
 									    <li class="grid__item  one-third  dropdown--column">
@@ -254,9 +191,8 @@
 	</div>
 		
 		
-		
+		<script type="text/javascript" src="http://code.jquery.com/jquery-1.8.3.min.js"></script>
 		<script type="text/javascript" src="assets/scripts/main.min.js"></script>
-		<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
 		<script type="text/javascript">
 			$(".topbar-search").click(function(){
 				$('html').toggleClass("search-is-open");
@@ -269,6 +205,38 @@
 				$('html').removeClass("search-is-open");
 			});
 			
+		</script>
+		
+		<script>
+			$(".js-navigation > ul").hover(
+				function () {
+  			  	var $this = $(this);
+  			    //setTimeout(function () {
+			    	$('html').addClass('js-nav-ready');
+					//}, 400);
+			  }, 
+			  function () {
+			  	var $this = $(this);
+			    //setTimeout(function () {
+			    	$('html').removeClass('js-nav-ready');
+					//}, 400);
+			  }
+			);
+	
+			$(".js-navigation .js-dropdown").hover(
+			  function () {
+			  var $this = $(this);
+			    //setTimeout(function () {
+					$this.addClass('js-hover');
+					//}, 400);
+			  }, 
+			  function () {
+			  var $this = $(this);
+			    // setTimeout(function () {
+					 $this.removeClass('js-hover');
+				// }, 400);
+			  }
+			);
 		</script>
 	
 </body>

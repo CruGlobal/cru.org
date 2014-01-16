@@ -50,7 +50,7 @@
 			background: none transparent scroll repeat 0 0;
 			@extend .cf;
 		
-		}
+		} 
 	}
 	
 	.site-logo {
@@ -58,11 +58,10 @@
 		height: 55px;	
 		margin: 0;
 		
-		background: $cru-logo-fallback;	
-			
 		background-image: $cru-logo-primary;
 		background-repeat: no-repeat;
 		background-position: top center;
 	}
+	
 
 	
