@@ -1,6 +1,32 @@
 /*------------------------------------*\
     $MIXINS
 \*------------------------------------*/
+/**
+ * These mixins are for the library to use only, you should not need to modify
+ * them at all.
+ *
+ * Enclose a block of code with a media query as named in `$breakpoints`.
+ */
+@mixin grid-media-query($media-query){
+    $breakpoint-found: false;
+
+    @each $breakpoint in $breakpoints{
+        $name: nth($breakpoint, 1);
+        $declaration: nth($breakpoint, 2);
+
+        @if $media-query == $name and $declaration{
+            $breakpoint-found: true;
+
+            @media only screen and #{$declaration}{
+                @content;
+            }
+        }
+    }
+
+    @if $breakpoint-found == false{
+        @warn "Breakpoint ‘#{$media-query}’ does not exist";
+    }
+}
 
 @mixin clearfix() {
   &:before,
@@ -39,6 +65,11 @@
         line-height:ceil($font-size / $base-line-height) * ($base-line-height / $font-size);
     }
 	
+}
+
+@mixin rem-calc($property, $value){
+    #{$property}: $value;
+   	#{$property}: ( $value / $base-font-size ) * 1rem;	
 }
 
 @mixin spacing($property) {
