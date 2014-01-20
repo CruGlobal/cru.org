@@ -5,10 +5,16 @@
 		@include vendor(transform, translate3d(0, 0, 0));
 	}
 
-	.site-header, .main-content{
+	.site-header{
 		@include vendor(transition-duration, $base-animation-time);
-		@include vendor(transform, translate3d(0, 82px, 0));
+		@include vendor(transform, translate3d(0, 136px, 0));
 	}
+	
+	.main-content{
+		@include vendor(transition-duration, $base-animation-time);
+		@include vendor(transform, translate3d(0, 136px, 0));
+	}
+	
 
 		
 }
@@ -63,7 +69,7 @@
     	height: 290px;
 		
     	/* Hover On */  
-    	@include vendor(transition, height $base-animation-time $base-animation-delay ease);
+    	@include vendor(transition, height $base-animation-time 200ms ease);
 	
   		.dropdown{
   			opacity: 1;

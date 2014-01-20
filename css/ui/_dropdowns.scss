@@ -23,17 +23,22 @@
 	//@include vendor(transition, border-color 250ms 0.2s ease);
 	h1, h2, h3, h4{
 		color: #333333;
-	    padding-left: $base-spacing-unit;
-	    padding-left: $line-height-ratio + rem;
 	}
 }
 
 .dropdown{
 	opacity: 0;
-	padding-top: 30px;
-	padding-bottom: 30px;
 	text-align: left;
+	
+	@include rem-calc(padding-top, 30px);
+	@include rem-calc(padding-bottom, 30px);
+	@include rem-calc(padding-left, $base-spacing-unit);
+	@include rem-calc(padding-right, $base-spacing-unit);
 	@include vendor(transition, opacity 0s $base-animation-delay ease );
+	
+	h5{
+		@include rem-calc(margin-bottom, ($base-spacing-unit / 2) );
+	}
 }
 
 .no-csstransitions .nav li .dropdown{
@@ -50,4 +55,18 @@
 	  opacity: 0;
 	  height: 100%;
   } 
+  
+  
+  
+  
+    .dropdown--title{
+	    padding-left: $base-spacing-unit;
+	    padding-left: $line-height-ratio + rem;
+    }
+	
+	.link-list{
+		list-style-type: none;
+		margin-bottom: 0;
+		@include rem-calc(margin-left, $base-spacing-unit);
+	}
   

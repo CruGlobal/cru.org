@@ -31,12 +31,20 @@
 							<li>
 								<input id="search-box" type="text"  class="form-input">
 								<input id="Query" value="#" name="Query" type="hidden"> 
-						        <select id="trigger-options"  class="form-control">
-						            <option>This Site</option>
-						            <option>Give to Staff, Ministries</option>
-						            <option>Our Other Sites</option>
-						        </select>
 								<input id="search-image" value="Search" type="submit"  class="button  button--small  button--primary">
+							</li>
+							<li>
+								<ul class="check-list  nav">
+									<li>
+						                <input type="radio"  name="search-options"  id="site" /> <label for="site">This Site</label>
+						            </li>
+						            <li>
+						                <input type="radio"  name="search-options"  id="give"/> <label for="give">Give to Staff &amp; Ministries</label>
+						            </li>
+						            <li>
+						                <input type="radio"  name="search-options"  id="others" /> <label for="others">Our Other Sites</label>
+						            </li>
+								</ul>
 							</li>
 						</ul>				
 					        <div id="trigger_options" >
@@ -75,38 +83,42 @@
 					
 						<ul class="nav  site-nav">
 						
-							<li class="has-dropdown  js-dropdown">
+							<li class="has-dropdown  js-dropdown  start">
 							    <a href="#"  class="nav-link">Start with God</a>	
-							    <div class="dropdown-wrap">
 								
+							    <div class="dropdown-wrap">								
 									<div class="dropdown  fixed-width">
-								   	    <h3>Start with God</h3>
-								  	    <ul class="nav  grid">
-										    <li class="grid__item  one-third  dropdown--column">
-											  <a href="#">Know God Personally</a>
-											  <a href="#">Jesus and the Intellectual</a>													  
-										    </li>
-										    <li class="grid__item  one-third  dropdown--column">
-										   	  <a href="#">Who is Jesus?</a>
-											  <a href="#">My Story</a>												
-										    </li>
-										    <li class="grid__item  one-third  dropdown--column">
-										  	  <a href="#">Did Jesus Rise from the Dead?</a>
-										    </li>
-									    </ul>
-									</div>
+									
+								  	    <div class="grid">
+										    <div class="grid__item  one-quarter  dropdown--column">												
+												<h5><a href="#">Know God Personally</a></h5>
+												<h5><a href="#">My Story</a></h5>
+											</div>
+  										   <div class="grid__item  one-quarter  dropdown--column">
+											   <h5><a href="#">Who is Jesus?</a></h5>
+  										    </div>
+  										    <div class="grid__item  one-quarter  dropdown--column">
+												<h5><a href="#">Did Jesus Rise from the Dead?</a></h5> 										  	 
+  										    </div>	
+  										    <div class="grid__item  one-quarter  dropdown--column">
+												<h5><a href="#">Jesus and the Intellectual</a>	</h5>										  	 
+  										    </div>										
+										</div>
+										
+										
+									</div><!-- End DROPDOWN FIXED-WIDTH -->								
+							    </div><!-- End DROPDOWN-WRAP -->
 								
-							    </div><!---->
 							</li>
 						
-							<li class="has-dropdown  js-dropdown">
+							<li class="has-dropdown  js-dropdown  train">
 							  <a href="#"  class="nav-link">Train & Grow</a>	
 							  <div class="arrow-up"></div>
 							  <div class="dropdown-wrap">
 							  
 							      <div class="dropdown  fixed-width">
-	  							  	<h3>Train & Grow</h3>
-							  	    <ul class="nav  grid">
+	  							  	<h3  class="dropdown--title">Train &amp; Grow</h3>
+							  	    <ul class="nav  nav--stacked  grid">
 									    <li class="grid__item  one-third  dropdown--column">
 										  <a href="#">Classic Cru</a>
 										  <a href="#">Bible Studies</a>
@@ -118,7 +130,7 @@
 									    </li>
 								
 									    <li class="grid__item  one-third  dropdown--column">
-									  	  <a href="#">Prayer, Quiet Times, Devotionals</a>
+									  	  <a href="#">Prayer, Quiet Times &amp; Devotionals</a>
 									    </li>
 								    </ul>
 								  </div>
@@ -126,14 +138,14 @@
 							  </div>
 							</li>
 						
-							<li class="has-dropdown  js-dropdown">
+							<li class="has-dropdown  js-dropdown  communities">
 							  <a href="#"  class="nav-link">Communities</a>
 							  <div class="arrow-up"></div>							  
 							  <div class="dropdown-wrap">
 							  
 							      <div class="dropdown  fixed-width">
-	  							  	<h3>Communities</h3>
-							  	    <ul class="nav  grid">
+	  							  	<h3  class="dropdown--title">Communities</h3>
+							  	    <ul class="nav  nav--stacked  grid">
 									    <li class="grid__item  one-third  dropdown--column">
 										    <a href="#">US Ministries</a>
 										    <a href="#">Americas</a>
@@ -153,13 +165,13 @@
 							  </div>
 							</li>
 						
-							<li class="has-dropdown  js-dropdown">
+							<li class="has-dropdown  js-dropdown  opportunities">
 							  <a href="#"  class="nav-link">Opportunities</a>	
 							  <div class="dropdown-wrap">
 							  
 							      <div class="dropdown  fixed-width">
-	  							  	<h3>Train & Grow</h3>
-							  	    <ul class="nav  grid">
+	  							  	<h3  class="dropdown--title">Opportunities</h3>
+							  	    <ul class="nav  nav--stacked  grid">
 									    <li class="grid__item  one-third  dropdown--column">
 										    <a href="#">Careers</a>
 										    <a href="#">Volunteers</a>
@@ -178,13 +190,13 @@
 							  </div>
 							</li>
 							
-							<li class="has-dropdown  js-dropdown">
+							<li class="has-dropdown  js-dropdown  about">
 								<a href="#" class="nav-link">About</a>
 	  							  <div class="dropdown-wrap">
 							  
 	  							      <div class="dropdown  fixed-width">
-	  	  							  	<h3>About Us</h3>
-	  							  	    <ul class="nav  grid">
+	  	  							  	<h3  class="dropdown--title">About Us</h3>
+	  							  	    <ul class="nav  nav--stacked  grid">
 	  									    <li class="grid__item  one-third  dropdown--column">
 	  										    <a href="#">Donor Relations</a>
 	  										    <a href="#">Our Leadership</a>
@@ -206,24 +218,20 @@
 	  							  </div>
 							</li>
 						
-							<li class="has-dropdown  js-dropdown">
+							<li class="has-dropdown  js-dropdown  store">
 								<a href="#"  class="nav-link">Store</a>
 	  							  <div class="dropdown-wrap">
 							  
 	  							      <div class="dropdown  fixed-width">
-	  	  							  	<h3>Train and Super Time Growth</h3>
-	  							  	    <ul class="nav  grid">
+	  	  							  	<h3  class="dropdown--title">Store</h3>
+	  							  	    <ul class="nav  nav--stacked  grid">
 	  									    <li class="grid__item  one-third  dropdown--column">
-	  										    <a href="#">Careers</a>
-	  										    <a href="#">Volunteers</a>
+	  										    <a href="#">All Stores</a>
 										
 	  									    </li>
 									
 	  									    <li class="grid__item  one-third  dropdown--column">
-	  									   	    <a href="#">Internships</a>
-	  									    </li>
-	  									    <li class="grid__item  one-third  dropdown--column">
-	  									  	    <a href="#">Mission Trips</a>
+	  									   	    <a href="#">Featured Products</a>
 	  									    </li>
 	  								    </ul>
 	  								  </div>
@@ -232,25 +240,26 @@
 							  
 							</li>
 						
-							<li class="has-dropdown  js-dropdown">
+							<li class="has-dropdown  js-dropdown  give">
 								<a href="#"  class="nav-link">Give</a>	
 								
 	  							  <div class="dropdown-wrap">
 							  
 	  							      <div class="dropdown  fixed-width">
-	  	  							  	<h3>Train and Super Time Growth</h3>
-	  							  	    <ul class="nav  grid">
+	  	  							  	<h3  class="dropdown--title">Give</h3>
+	  							  	    <ul class="nav  nav--stacked  grid">
 	  									    <li class="grid__item  one-third  dropdown--column">
-	  										    <a href="#">Careers</a>
-	  										    <a href="#">Volunteers</a>
-										
+	  										    <a href="#">Search Staff &amp; Ministries</a>
+	  										    <a href="#">Other Ways to Give</a>										
 	  									    </li>
 									
 	  									    <li class="grid__item  one-third  dropdown--column">
-	  									   	    <a href="#">Internships</a>
+	  									   	    <a href="#">Gift Cart &amp; Checkout</a>
+												<a href="#">Donor Relations</a>
 	  									    </li>
 	  									    <li class="grid__item  one-third  dropdown--column">
-	  									  	    <a href="#">Mission Trips</a>
+	  									  	    <a href="#">Your Account</a>
+												<a href="#">FAQ</a>
 	  									    </li>
 	  								    </ul>
 	  								  </div>
@@ -261,11 +270,19 @@
 						
 						</ul>
 					</nav>
-				</div>
-			</div>
+					
+				</div><!-- END NAVIGATION-WRAPPER -->
+			</div><!-- END BG-WHITE -->
 		</header>
 		<div class="main-content">
 			<div class="fixed-width">
+				<h1>Heading 1</h1>
+				<h2>Heading 2</h2>
+				<h3>Heading 3</h3>
+				<h4>Heading 4</h4>
+				<h5>Heading 5</h5>
+				<h6>Heading 6</h6>
+				
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 			</div>
