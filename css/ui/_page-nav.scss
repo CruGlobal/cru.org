@@ -45,7 +45,7 @@
 		max-height: 100%;
 		vertical-align: middle;
 	
-		@include vendor(transition, all 0.25s ease-in-out);
+		@include vendor(transition, background-color, color $base-animation-time ease);
 		
 		&:hover{
 			background-color: #f7f7f7;
