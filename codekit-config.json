@@ -13,6 +13,26 @@
       "initialSize" : 7462,
       "fileType" : 4096
     },
+    "\/Cru_files\/cru217x120.jpg" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/Cru_files\/cru217x120.jpg",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/Cru_files\/cru217x120.jpg",
+      "initialSize" : 7631,
+      "fileType" : 4096
+    },
+    "\/Cru_files\/follow_button_002.html" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/Cru_files\/follow_button_002.html",
+      "outputAbbreviatedPath" : "No Output Path",
+      "fileType" : 2048
+    },
     "\/redux.scss" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
@@ -25,15 +45,6 @@
       "fileType" : 4,
       "debugStyle" : 0
     },
-    "\/Cru_files\/follow_button_002.html" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/Cru_files\/follow_button_002.html",
-      "outputAbbreviatedPath" : "No Output Path",
-      "fileType" : 2048
-    },
     "\/Cru_files\/sitenavigationfunctions.js" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
@@ -45,16 +56,14 @@
       "outputAbbreviatedPath" : "\/Users\/jamesdempsey\/Sites\/cru-projects\/assets\/scripts\/sitenavigationfunctions.min.js",
       "fileType" : 64
     },
-    "\/Cru_files\/cru217x120.jpg" : {
+    "\/Cru_files\/d.css" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/Cru_files\/cru217x120.jpg",
-      "processed" : 0,
-      "outputAbbreviatedPath" : "\/Cru_files\/cru217x120.jpg",
-      "initialSize" : 7631,
-      "fileType" : 4096
+      "inputAbbreviatedPath" : "\/Cru_files\/d.css",
+      "outputAbbreviatedPath" : "No Output Path",
+      "fileType" : 16
     },
     "\/assets\/scripts\/modernizr.min.js" : {
       "ignoreWasSetByUser" : 0,
@@ -66,15 +75,6 @@
       "syntaxCheckerStyle" : 1,
       "outputAbbreviatedPath" : "\/assets\/scripts\/modernizr.min.min.js",
       "fileType" : 64
-    },
-    "\/Cru_files\/d.css" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/Cru_files\/d.css",
-      "outputAbbreviatedPath" : "No Output Path",
-      "fileType" : 16
     },
     "\/Cru_files\/print.css" : {
       "ignoreWasSetByUser" : 0,
@@ -105,6 +105,17 @@
       "initialSize" : 896,
       "fileType" : 4096
     },
+    "\/Cru_files\/ga.js" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/Cru_files\/ga.js",
+      "outputStyle" : 1,
+      "syntaxCheckerStyle" : 1,
+      "outputAbbreviatedPath" : "\/Users\/jamesdempsey\/Sites\/cru-projects\/assets\/scripts\/ga.min.js",
+      "fileType" : 64
+    },
     "\/mixins.scss" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 1,
@@ -117,17 +128,6 @@
       "fileType" : 4,
       "debugStyle" : 0
     },
-    "\/Cru_files\/ga.js" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/Cru_files\/ga.js",
-      "outputStyle" : 1,
-      "syntaxCheckerStyle" : 1,
-      "outputAbbreviatedPath" : "\/Users\/jamesdempsey\/Sites\/cru-projects\/assets\/scripts\/ga.min.js",
-      "fileType" : 64
-    },
     "\/Cru_files\/sprites-20130901.png" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
@@ -139,17 +139,6 @@
       "initialSize" : 55356,
       "fileType" : 8192
     },
-    "\/Cru_files\/jquery-ui.js" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/Cru_files\/jquery-ui.js",
-      "outputStyle" : 1,
-      "syntaxCheckerStyle" : 1,
-      "outputAbbreviatedPath" : "\/Users\/jamesdempsey\/Sites\/cru-projects\/assets\/scripts\/jquery-ui.min.js",
-      "fileType" : 64
-    },
     "\/Cru_files\/cru_utils.js" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
@@ -159,6 +148,17 @@
       "outputStyle" : 1,
       "syntaxCheckerStyle" : 1,
       "outputAbbreviatedPath" : "\/Users\/jamesdempsey\/Sites\/cru-projects\/assets\/scripts\/cru_utils.min.js",
+      "fileType" : 64
+    },
+    "\/Cru_files\/jquery-ui.js" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/Cru_files\/jquery-ui.js",
+      "outputStyle" : 1,
+      "syntaxCheckerStyle" : 1,
+      "outputAbbreviatedPath" : "\/Users\/jamesdempsey\/Sites\/cru-projects\/assets\/scripts\/jquery-ui.min.js",
       "fileType" : 64
     },
     "\/index.html" : {
@@ -256,15 +256,6 @@
       "outputAbbreviatedPath" : "\/Users\/jamesdempsey\/Sites\/cru-projects\/assets\/scripts\/hoverIntent.min.js",
       "fileType" : 64
     },
-    "\/Cru_files\/style.css" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/Cru_files\/style.css",
-      "outputAbbreviatedPath" : "No Output Path",
-      "fileType" : 16
-    },
     "\/Cru_files\/cru217x120_003.jpg" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
@@ -276,16 +267,14 @@
       "initialSize" : 13192,
       "fileType" : 4096
     },
-    "\/modernizr.js" : {
+    "\/Cru_files\/style.css" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/modernizr.js",
-      "outputStyle" : 1,
-      "syntaxCheckerStyle" : 1,
-      "outputAbbreviatedPath" : "\/assets\/scripts\/modernizr.min.js",
-      "fileType" : 64
+      "inputAbbreviatedPath" : "\/Cru_files\/style.css",
+      "outputAbbreviatedPath" : "No Output Path",
+      "fileType" : 16
     },
     "\/Cru_files\/ssajax.js" : {
       "ignoreWasSetByUser" : 0,
@@ -296,6 +285,17 @@
       "outputStyle" : 1,
       "syntaxCheckerStyle" : 1,
       "outputAbbreviatedPath" : "\/Users\/jamesdempsey\/Sites\/cru-projects\/assets\/scripts\/ssajax.min.js",
+      "fileType" : 64
+    },
+    "\/modernizr.js" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/modernizr.js",
+      "outputStyle" : 1,
+      "syntaxCheckerStyle" : 1,
+      "outputAbbreviatedPath" : "\/assets\/scripts\/modernizr.min.js",
       "fileType" : 64
     },
     "\/Cru_files\/cru622x342_004.jpg" : {
@@ -428,6 +428,17 @@
       "outputAbbreviatedPath" : "\/Users\/jamesdempsey\/Sites\/cru-projects\/assets\/scripts\/cbgapi_002.min.js",
       "fileType" : 64
     },
+    "\/images\/bg-main.jpg" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/images\/bg-main.jpg",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/images\/bg-main.jpg",
+      "initialSize" : 4366,
+      "fileType" : 4096
+    },
     "\/Cru_files\/cru75x41_002.jpg" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
@@ -450,6 +461,15 @@
       "outputAbbreviatedPath" : "\/Users\/jamesdempsey\/Sites\/cru-projects\/assets\/scripts\/carousel.min.js",
       "fileType" : 64
     },
+    "\/ie8.min.css" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 1,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/ie8.min.css",
+      "outputAbbreviatedPath" : "\/No Output Path",
+      "fileType" : 16
+    },
     "\/Cru_files\/postmessageRelay_data\/corerpcshindig.js" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
@@ -460,26 +480,6 @@
       "syntaxCheckerStyle" : 1,
       "outputAbbreviatedPath" : "\/Users\/jamesdempsey\/Sites\/cru-projects\/assets\/scripts\/corerpcshindig.min.js",
       "fileType" : 64
-    },
-    "\/ie8.min.css" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 1,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/ie8.min.css",
-      "outputAbbreviatedPath" : "\/No Output Path",
-      "fileType" : 16
-    },
-    "\/images\/bg-main.jpg" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/images\/bg-main.jpg",
-      "processed" : 0,
-      "outputAbbreviatedPath" : "\/images\/bg-main.jpg",
-      "initialSize" : 4366,
-      "fileType" : 4096
     },
     "\/Cru_files\/page.js" : {
       "ignoreWasSetByUser" : 0,
@@ -581,6 +581,17 @@
       "outputAbbreviatedPath" : "\/Users\/jamesdempsey\/Sites\/cru-projects\/assets\/scripts\/usb5wjy.min.js",
       "fileType" : 64
     },
+    "\/Cru_files\/sitenavigation.js" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/Cru_files\/sitenavigation.js",
+      "outputStyle" : 1,
+      "syntaxCheckerStyle" : 1,
+      "outputAbbreviatedPath" : "\/Users\/jamesdempsey\/Sites\/cru-projects\/assets\/scripts\/sitenavigation.min.js",
+      "fileType" : 64
+    },
     "\/ie8.scss" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
@@ -592,17 +603,6 @@
       "outputAbbreviatedPath" : "\/ie8.min.css",
       "fileType" : 4,
       "debugStyle" : 0
-    },
-    "\/Cru_files\/sitenavigation.js" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/Cru_files\/sitenavigation.js",
-      "outputStyle" : 1,
-      "syntaxCheckerStyle" : 1,
-      "outputAbbreviatedPath" : "\/Users\/jamesdempsey\/Sites\/cru-projects\/assets\/scripts\/sitenavigation.min.js",
-      "fileType" : 64
     },
     "\/Cru_files\/plusone.js" : {
       "ignoreWasSetByUser" : 0,

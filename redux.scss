@@ -25,7 +25,7 @@ body{
 	height: 84px;
 	background-color: #ffffff;
 	margin-bottom: 60px;
-	border-top: 3px solid $cru-gold;
+	border-top: 4px solid $cru-gold;
 	
 	@include vendor(box-shadow, 0 1px 1px rgba(6,8,8,0.1));
 	
