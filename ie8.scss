@@ -1,0 +1,41 @@
+.lt-ie9{
+	#user-actions{
+		& > li{
+			width: 78px;
+		}
+	}
+	
+	#header h1 a{
+		background: url('images/cru-logo.png') no-repeat;
+		height: 74px;
+		width: 159px;
+	}
+	
+	#nav{
+		left: 171px;
+	}
+	
+	.home{
+		z-index: 1;
+	}
+}
+
+
+.lt-ie8{
+	#search_options{
+		height: 60px;
+	}
+	
+	#nav>ul>li>ul{
+		z-index: 1000;
+		background-color: #e9e9e9;
+	}
+	
+	#nav-bg{
+		background: transparent;
+	}
+	
+	#header{
+		margin-bottom: 78px;
+	}
+}

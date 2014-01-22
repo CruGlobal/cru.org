@@ -1,0 +1,109 @@
+/* #header { margin-bottom: 0; } */	
+
+#content {
+	width: auto;
+	float: none;
+	padding: 35px 35px 80px 35px !important;
+}
+#sidebar {
+	display: none;
+}
+
+#social-buttons {
+	top: 240px;
+}
+/* @group Audiences */
+
+
+#audience {
+	margin: -35px -35px 30px -35px;
+}
+#audience .col {
+	float: left;
+	padding: 20px 10px 0 10px;
+	width: 215px;
+	border-top: 6px solid #eee;
+	font-size: 18px;
+	font-weight: 500;
+}
+#audience .col img {
+	display: block;
+	margin: 0 0 20px 0;
+}
+#audience .col h2 {
+	margin-bottom: 10px;
+}
+#audience #students {
+	padding-left: 29px; /* was 30px, smaller to accomodate 1px border */
+	border-color: #f9b625; /* #666062 #0a7292; */
+}
+#audience #students h2,
+#audience #students a {
+	color: #007398;  /* #1787aa; */
+}
+#audience #families {
+	border-color: #f9b625; /* #666062 #de7c00; */
+}
+#audience #families h2,
+#audience #families a {
+	color: #007398; /* #de7c00; */
+}
+#audience #city {
+	border-color: #f9b625; /* #666062 #ecb926; */
+}
+#audience #city h2,
+#audience #city a {
+	color: #007398; /* #d49f06; */
+}
+#audience #athletes {
+	padding-right: 29px; /* was 30px, smaller to accomodate 1px border */
+	border-color: #f9b625; /* #666062 #3eb1c8; */
+}
+#audience #athletes h2,
+#audience #athletes a {
+	color: #007398; /* #3eb1c8; */
+}
+
+#audience #students h2,
+#audience #families h2,
+#audience #city h2,
+#audience #athletes h2 {
+	color: #666062;	
+}
+
+/* @end */
+
+/* @group Get Started */
+
+#start {
+	margin: -35px -35px 0px -35px;
+	padding: 28px;
+	
+}
+#start .col {
+	float: left;
+	width: 49%;
+}
+#start .col.last {
+	float: right;
+}
+#start > h2 {
+	padding: 0 0 12px 28px;
+	margin: 0 -28px 16px -28px;
+	border-bottom: 1px solid #e5e5e5;
+}
+#start .button {
+	display: block;
+	margin: 0 0 30px 0;
+	text-align: center;
+}
+
+#start .cols-3 .col {
+	width: 33%;
+	margin: 0;
+}
+
+#start .fb_iframe_widget {
+	margin: 0 0 20px 0;
+}
+/* @end */
