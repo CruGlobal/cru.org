@@ -1,0 +1,11 @@
+body {background-color:white;}
+#secondaryContent, #secondaryNav, #search, #nav, #login, #topStories, #footer, #sidebar, #fb-root, #social {display:none;}
+html #container, html #main, html #content, html #mainContent, html #articleWrap, html #article {
+	width:auto;
+	clear:left;
+	float:none;
+	display:inline;
+	overflow: visible;
+	}
+h3.boxHead {border:thin; background-color:#2E406B;}
+/* #mainContent{float:none; text-align:left;} */

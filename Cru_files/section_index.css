@@ -1,0 +1,81 @@
+#contentContainer{
+	width: 636px;
+	margin: 0 auto;
+}
+
+#contentBox{
+	width: 200px; height: 200px; float: left; border: 1px solid #c8c8c8; margin: 0 5px 10px 5px; text-align: center;
+}
+#contentBox img{
+	margin-top: 24px;
+}
+#contentBox h3 a{
+	margin: 0 5px;
+	display: block;
+}
+
+
+/****Module 2 Styles*****/
+#module2{
+	margin: 0 auto;
+	margin-bottom: 15px;
+	width: 636px;
+}
+
+#module2 .subMod{
+	border: 1px solid #c8c8c8;
+    display: inline;
+    float: left;
+    margin: 8px;
+    width: 300px;
+    height: 220px;
+    text-align: center;
+}
+#module2 .subMod p{
+	margin: 0 5px;
+}
+
+
+
+/****Section Index Sidebar Styles*****/
+#list_1 #changedLives{
+	border: 1px solid rgba(1, 1, 1, 0.07);
+	border-radius: 2px 2px 2px 2px;
+	color: #333333;
+	margin: 0 0 15px;
+	position: relative;
+}
+#list_1 #changedLives h3.boxHead{
+	background: none repeat scroll 0 0 #C8C8C8;
+	color: #414141;
+	font-size: 18px;
+	margin: 0;
+	padding: 10px;
+}
+#list_1 #changedLives #listContent{
+	margin: 0;
+	position: relative;
+	background: none repeat scroll 0 0 white;
+}
+#list_1 #changedLives #listContent #chLivesList{
+	clear: both;
+	padding: 10px 10px 42px 10px;
+	position: relative;
+	margin: 0;
+}
+#list_1 #changedLives #listContent #chLivesList dt img {
+    float: left;
+    margin: 0 10px 0 0;
+    padding: 0;
+}
+#list_1 #changedLives #listContent #chLivesList dt{
+	clear: both;
+    display: block;
+    margin: 0;
+    padding: 8px 0 0;
+}
+#list_1 #changedLives #listContent #chLivesList dd{
+    
+    margin: 0;
+    padding: 0;
+}
